@@ -136,9 +136,8 @@ onMounted(() => {
                   <div class="form-footer">
                       <div class="social-icons">
   <!--                                <a href="https://www.facebook.com/profile.php?id=100085701498879" id="facebook"><i class="fab fa-facebook"></i></a> -->
-                          <a href="https://www.linkedin.com/in/charles-babbage-8291a6211/" id="linkedin"><i class="fab fa-linkedin"></i></a>
-                          <a href="https://gitlab.com/cbabbage0991" id="gitlab"><i class="fab fa-gitlab"></i></a>
-                          <a href="https://github.com/cbabbage0991" id="github"><i class="fab fa-github"></i></a>
+                          <a href="https://www.linkedin.com/in/fil-sammy-abawag/" id="linkedin"><i class="fab fa-linkedin"></i></a>
+                          <a href="https://github.com/filsammy" id="github"><i class="fab fa-github"></i></a>
                       </div>
                       <button type="submit" class="submit-btn pl-5 pr-5">{{ isLoading ? "Sending..." : "Submit" }}</button>
                   </div>

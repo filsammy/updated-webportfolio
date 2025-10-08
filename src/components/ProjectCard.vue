@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue';
 
 // define the props for this component named "project".
 defineProps({

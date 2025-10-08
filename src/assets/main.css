@@ -1,54 +1,113 @@
+/* Navigation Menu */
 #menu {
-
-    /* UI Properties */
-    background: #003E86 0% 0% no-repeat padding-box;
+    background: linear-gradient(180deg, #0F2027 0%, #203A43 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#hm, #prjcts, #tls, #cntct {
-    /* Layout Properties */
+#hm,
+#prjcts,
+#tls,
+#cntct {
     margin-left: 50px;
-    /* UI Properties */
     text-align: center;
     font: normal normal 500 20px Montserrat;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
+    transition: color 0.3s ease;
 }
+
+#hm:hover,
+#prjcts:hover,
+#tls:hover,
+#cntct:hover {
+    color: #039682;
+}
+
+/* Landing Section */
+/* Put this in a global CSS file OR remove `scoped` from your component's <style> tag */
+
+/* Landing background — banner-like fade + faded image */
 #landing {
-    /* UI Properties */
-    background: #CBDCF2 0% 0% no-repeat padding-box;
-    opacity: 1;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+    background: linear-gradient(to right,
+            rgba(250, 250, 250, 0.9) 0%,
+            /* solid teal base */
+            rgba(48, 94, 90, 0.9) 80%);
+}
+
+/* actual background image layer */
+#landing::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('images/catcat.png') right/cover no-repeat;
+    opacity: 0.22;
+    /* 👈 make the image subtle here */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* optional soft tint for harmony */
+#landing::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 150, 130, 0.15);
+    /* gentle teal wash */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ensures your content stays visible */
+#landing>* {
+    position: relative;
+    z-index: 1;
 }
 
 .landing-text {
-    color: #003E86;
-    opacity: 1;
+    color: #FFFFFF;
+    opacity: 0.95;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
+/* Cards */
 .card {
-    /* Layout Properties */
-
-    /* UI Properties */
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: -1px 3px 6px #00000029;
+    background: linear-gradient(145deg, #FFFFFF 0%, #F8F9FA 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0 5px 15px rgba(15, 32, 39, 0.15);
     border-radius: 15px;
     opacity: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(32, 58, 67, 0.1);
 }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(15, 32, 39, 0.25);
+}
+
 .card-title {
-    /* UI Properties */
     text-align: left;
     font: normal normal 600 20px Montserrat;
     letter-spacing: 0px;
-    color: #003E86;
+    color: #203A43;
+    opacity: 1;
 }
 
 .card-text {
-    /* UI Properties */
     text-align: left;
     font: normal normal medium 14px Montserrat;
     letter-spacing: 0px;
-    color: #003E86;
+    color: #2C4B5E;
+    opacity: 1;
+    line-height: 1.6;
 }
 
 .card-img {
@@ -57,45 +116,85 @@
     padding-right: 5px;
     padding-bottom: 0px;
     opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-img {
+    opacity: 0.9;
 }
 
 .tools-img {
     padding: 15px;
+    transition: transform 0.3s ease;
 }
 
+.tools-img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
 .contact-section {
     max-width: 1200px;
     margin: auto;
     padding: 50px 20px;
+    border-radius: 20px;
 }
+
 .contact-form-control {
-    background-color: transparent;
-    border: 1px solid #003C82;
-    color: #003C82;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #203A43;
+    color: #0F2027;
     padding: 12px;
     font-size: 16px;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.contact-form-control:focus {
+    border-color: #2C4B5E;
+    box-shadow: 0 0 0 3px rgba(32, 58, 67, 0.1);
+    outline: none;
+}
+
 .contact-form-control::placeholder {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(15, 32, 39, 0.5);
 }
+
 .submit-btn {
-    background-color: #3A86FF;
+    background: #039682;
     color: white;
     border-radius: 30px;
     padding: 12px 30px;
     border: none;
     font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(32, 58, 67, 0.3);
+}
+
 .social-icons a {
     font-size: 28px;
     margin-right: 15px;
-    color: #0C2D57;
+    color: #039682;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
+
+.social-icons a:hover {
+    color: #0F2027;
+    transform: translateY(-3px);
+}
+
 .map-container iframe {
     width: 100%;
-    height: 350px;
+    height: 430px;
     border-radius: 10px;
-    padding-right: 50px;
+    border: 3px solid rgba(32, 58, 67, 0.2);
 }
 
 .form-footer {
@@ -112,30 +211,50 @@
     font-size: 2rem;
 }
 
+/* Global Styles */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Poppins",sans-serif; 
-    background: #F0F7FF 0% 0% no-repeat padding-box;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #F0F4F8 0%, #E8EEF2 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
+    color: #2C4B5E;
 }
 
-h1,h2,h3,h4, .nav-link,.card-title {
+h1,
+h2,
+h3,
+h4,
+.nav-link,
+.card-title {
     font-family: "Montserrat", serif;
-    color: #003E86;
+    color: #039682;
     opacity: 1;
 }
 
 h1 {
-    /* UI Properties */
     font: normal normal 750 45px/30px Montserrat;
-    color: #003E86;
+    color: #039682;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Footer */
 footer {
-    background: #003E86 0% 0% no-repeat padding-box;
+    background: linear-gradient(180deg, #0F2027 0%, #203A43 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
+    color: #FFFFFF;
+    padding: 40px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Spacing */
+section {
+    padding: 60px 0;
+}
+
+/* Smooth Transitions */
+* {
+    transition: all 0.2s ease;
 }
