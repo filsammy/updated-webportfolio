@@ -86,6 +86,50 @@ const prevSlide = () => {
 </template>
 
 <style scoped>
+.card {
+    background: linear-gradient(145deg, #ffffff 0%, #ffffff86 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0 5px 15px rgba(15, 32, 39, 0.15);
+    border-radius: 15px;
+    opacity: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(32, 58, 67, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(15, 32, 39, 0.25);
+}
+
+.card-title {
+    text-align: left;
+    font: normal normal 600 20px Montserrat;
+    letter-spacing: 0px;
+    color: #203A43;
+    opacity: 1;
+}
+
+.card-text {
+    text-align: left;
+    font: normal normal medium 14px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    line-height: 1.6;
+}
+
+.card-img {
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-img {
+    opacity: 0.9;
+}
+
 .image-carousel {
     position: relative;
     width: 100%;

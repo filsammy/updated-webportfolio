@@ -152,4 +152,53 @@ onMounted(() => {
   </div>
 </template>
 
-<style></style>
+<style scoped>
+.contact-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    border-radius: 20px;
+}
+
+.contact-form-control {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #203A43;
+    color: #0F2027;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-control:focus {
+    border-color: #2C4B5E;
+    box-shadow: 0 0 0 3px rgba(32, 58, 67, 0.1);
+    outline: none;
+}
+
+.contact-form-control::placeholder {
+    color: rgba(15, 32, 39, 0.5);
+}
+
+/* Map */
+.map-container iframe {
+    width: 100%;
+    height: 430px;
+    border-radius: 10px;
+    border: 3px solid rgba(32, 58, 67, 0.2);
+}
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-footer .submit-btn {
+    margin-left: auto;
+}
+
+.fab {
+    font-size: 2rem;
+}
+</style>

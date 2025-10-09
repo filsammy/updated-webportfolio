@@ -62,5 +62,13 @@
   </div>
 </template>
 
-<style>
+<style scoped>
+.tools-img {
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.tools-img:hover {
+    transform: scale(1.1);
+}
 </style>

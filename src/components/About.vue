@@ -16,7 +16,7 @@ import CV from '../assets/files/FSA_CV.pdf'
       <h2 class="mt-2 text-center text-md-left" id="myTitle">// Jr. Full Stack Web Developer</h2>
 
       <p class="text-justify landing-text">
-        With a passion for building scalable, user-focused applications. Guided by curiosity and modern tools like AI,
+        With a passion for building scalable, user-focused applications. Guided by curiosity and a vast option of AI and different tools,
         I continuously refine my skills to create smarter and more efficient digital solutions.
       </p>
 
@@ -67,5 +67,138 @@ import CV from '../assets/files/FSA_CV.pdf'
 </template>
 
 <style scoped>
+#landing {
+    position: relative;
+    height: 100vh;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+    background: linear-gradient(to right,
+            rgba(250, 250, 250, 0.9) 0%,
+            /* solid teal base */
+            rgba(48, 94, 90, 0.9) 100%);
+}
 
+#landing::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../assets/images/catcat.png') right/cover no-repeat;
+    opacity: 0.25;
+    /* 👈 make the image subtle here */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* optional soft tint for harmony */
+#landing::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 150, 130, 0.15);
+    /* gentle teal wash */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ensures your content stays visible */
+#landing>* {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-pic {
+    object-fit: cover;
+    /* ensures the image fills the circle nicely */
+    border-radius: 50%;
+    /* makes it perfectly round */
+    border: 5px solid #056569;
+    /* clean white frame */
+    box-shadow: 0 0 20px rgba(7, 66, 37, 0.3);
+    /* subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(11, 255, 255, 0.3);
+}
+
+#myGreeting {
+    color: #f0f0f0;
+    font-size: clamp(1.1rem, 2.1vw, 1.4rem);
+    /* subtle intro size */
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#myName {
+    color: #056569;
+    text-shadow: 1px 1px 3px #f0f0f0;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    /* main highlight */
+    font-weight: 700;
+}
+
+#myTitle {
+    color: #f0f0f0;
+    text-shadow: 2px 2px 2px #039682;
+    font-size: clamp(1.2rem, 2.1vw, 1.6rem);
+    /* subtitle feel */
+    font-weight: 600;
+}
+
+.landing-text {
+    color: #f0f0f0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    font-size: clamp(0.8rem, 1.3vw, 1.1rem);
+    line-height: 1.3;
+}
+
+.certificate-img {
+    width: 120px;
+    /* adjust as needed */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-img:hover {
+    transform: scale(1.05);
+}
+
+.certificate-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.certificate-details {
+    visibility: hidden;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+
+    /* Position the tooltip */
+    position: absolute;
+    bottom: 110%;
+    /* above the image */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    /* Smooth fade-in effect */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.certificate-container:hover .certificate-details {
+    visibility: visible;
+    opacity: 1;
+}
 </style>
