@@ -1,6 +1,6 @@
 /* Navigation Menu */
 #menu {
-    background: linear-gradient(180deg, #0F2027 0%, #203A43 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(180deg, #0f2227 0%, #0b5255 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -26,11 +26,9 @@
 }
 
 /* Landing Section */
-/* Put this in a global CSS file OR remove `scoped` from your component's <style> tag */
-
-/* Landing background — banner-like fade + faded image */
 #landing {
     position: relative;
+    height: 100vh;
     padding: 80px 0;
     display: flex;
     align-items: center;
@@ -40,7 +38,7 @@
     background: linear-gradient(to right,
             rgba(250, 250, 250, 0.9) 0%,
             /* solid teal base */
-            rgba(48, 94, 90, 0.9) 80%);
+            rgba(48, 94, 90, 0.9) 100%);
 }
 
 /* actual background image layer */
@@ -49,7 +47,7 @@
     position: absolute;
     inset: 0;
     background: url('images/catcat.png') right/cover no-repeat;
-    opacity: 0.22;
+    opacity: 0.25;
     /* 👈 make the image subtle here */
     z-index: 0;
     pointer-events: none;
@@ -72,11 +70,98 @@
     z-index: 1;
 }
 
-.landing-text {
-    color: #FFFFFF;
-    opacity: 0.95;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+.profile-pic {
+    object-fit: cover;
+    /* ensures the image fills the circle nicely */
+    border-radius: 50%;
+    /* makes it perfectly round */
+    border: 5px solid #056569;
+    /* clean white frame */
+    box-shadow: 0 0 20px rgba(7, 66, 37, 0.3);
+    /* subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(11, 255, 255, 0.3);
+}
+
+#myGreeting {
+    color: #f0f0f0;
+    font-size: clamp(1.1rem, 2.1vw, 1.4rem);
+    /* subtle intro size */
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#myName {
+    color: #056569;
+    text-shadow: 1px 1px 3px #f0f0f0;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    /* main highlight */
+    font-weight: 700;
+}
+
+#myTitle {
+    color: #f0f0f0;
+    text-shadow: 2px 2px 2px #039682;
+    font-size: clamp(1.2rem, 2.1vw, 1.6rem);
+    /* subtitle feel */
+    font-weight: 600;
+}
+
+.landing-text {
+    color: #f0f0f0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    font-size: clamp(0.8rem, 1.3vw, 1.1rem);
+    line-height: 1.3;
+}
+
+.certificate-img {
+    width: 120px;
+    /* adjust as needed */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-img:hover {
+    transform: scale(1.05);
+}
+
+.certificate-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.certificate-details {
+    visibility: hidden;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+
+    /* Position the tooltip */
+    position: absolute;
+    bottom: 110%;
+    /* above the image */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    /* Smooth fade-in effect */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.certificate-container:hover .certificate-details {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* Cards */
 .card {
@@ -180,7 +265,7 @@
 .social-icons a {
     font-size: 28px;
     margin-right: 15px;
-    color: #039682;
+    color: #ffffff;
     transition: color 0.3s ease, transform 0.3s ease;
     display: inline-block;
 }
@@ -216,16 +301,48 @@ html {
     scroll-behavior: smooth;
 }
 
+/*background*/
 body {
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #F0F4F8 0%, #E8EEF2 100%) 0% 0% no-repeat padding-box;
-    opacity: 1;
-    color: #2C4B5E;
+    background: linear-gradient(135deg,
+            #072f2e 0%,
+            #0a4446 25%,
+            #06584d 50%,
+            #066456 75%,
+            #0b3e3b 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f3f0eb;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 100 100' fill='%23c2a98d' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0C43 15 30 15 30 30c0 10 10 10 10 20s-10 10-10 20c0 15 13 15 20 30 7-15 20-15 20-30 0-10-10-10-10-20s10-10 10-20c0-15-13-15-20-30z' opacity='0.1'/%3E%3C/svg%3E");
+
+    background-repeat: repeat;
+    opacity: 0.7;
+    animation: floatRings 90s linear infinite;
+    z-index: -1;
+}
+
+@keyframes floatRings {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-300px, -200px) rotate(2deg);
+    }
 }
 
 h1,
 h2,
-h3,
 h4,
 .nav-link,
 .card-title {
@@ -234,15 +351,21 @@ h4,
     opacity: 1;
 }
 
+h3 {
+    font-family: "Montserrat", serif;
+    color: #ffffff;
+    opacity: 1;
+}
+
 h1 {
     font: normal normal 750 45px/30px Montserrat;
-    color: #039682;
+    color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(180deg, #0F2027 0%, #203A43 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(180deg, #0a1d1c 0%, #0e5252 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
     color: #FFFFFF;
     padding: 40px 0;

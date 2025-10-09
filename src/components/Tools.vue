@@ -3,9 +3,9 @@
 
 <template>
   <!-- tools -->
-  <div class="row flex-column bg-white jumbotron" id="tools">
+  <div class="row flex-column" id="tools">
       <h1 class="my-1 text-center" >Tools</h1>
-      <div class="row justify-content-center py-3 tools-img">
+      <div class="row justify-content-center py-3">
           <div class="col-md-3 col-lg-2 mx-4 my-3">
               <h3 class="my-3 text-center">Front End</h3>
               <div class="row justify-content-center tools-img gx-5">
