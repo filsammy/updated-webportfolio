@@ -138,8 +138,8 @@
             <p class="text-center small mt-1 mb-0">Trello</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="img-fluid" />
-            <p class="text-center small mt-1 mb-0">GitHub</p>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="img-fluid" />
+<p class="text-center small mt-1 mb-0">Vue.js</p>
           </div>
         </div>
       </div>
