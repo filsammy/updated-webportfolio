@@ -36,10 +36,17 @@ const nextSlide = () => {
 const prevSlide = () => {
     currentIndex.value = (currentIndex.value - 1 + images.value.length) % images.value.length;
 };
+
+// Handle card click
+const handleCardClick = () => {
+    if (props.project.url) {
+        window.open(props.project.url, '_blank');
+    }
+};
 </script>
 
 <template>
-    <div class="card col-md-3">
+    <div class="card col-md-3" @click="handleCardClick" :class="{ 'clickable': project.url }">
         <!-- Custom Carousel -->
         <div class="image-carousel">
             <div class="carousel-container">
@@ -55,10 +62,18 @@ const prevSlide = () => {
 
                 <!-- Navigation Arrows - only show if multiple images -->
                 <template v-if="hasMultipleImages">
-                    <button class="carousel-btn prev-btn" @click="prevSlide" type="button">
+                    <button 
+                        class="carousel-btn prev-btn" 
+                        @click.stop="prevSlide" 
+                        type="button"
+                    >
                         <span>‹</span>
                     </button>
-                    <button class="carousel-btn next-btn" @click="nextSlide" type="button">
+                    <button 
+                        class="carousel-btn next-btn" 
+                        @click.stop="nextSlide" 
+                        type="button"
+                    >
                         <span>›</span>
                     </button>
                 </template>
@@ -69,7 +84,7 @@ const prevSlide = () => {
                 <button 
                     v-for="(image, index) in images" 
                     :key="index"
-                    @click="goToSlide(index)"
+                    @click.stop="goToSlide(index)"
                     :class="{ active: index === currentIndex }"
                     type="button"
                 ></button>
@@ -81,6 +96,17 @@ const prevSlide = () => {
             <p class="card-text">
                 {{ project.description }}
             </p>
+            
+            <!-- Technology Badges -->
+            <div v-if="project.technologies && project.technologies.length > 0" class="tech-badges">
+                <span 
+                    v-for="(tech, index) in project.technologies" 
+                    :key="index"
+                    class="tech-badge"
+                >
+                    {{ tech }}
+                </span>
+            </div>
         </div>
     </div>
 </template>
@@ -93,6 +119,10 @@ const prevSlide = () => {
     opacity: 1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(32, 58, 67, 0.1);
+}
+
+.card.clickable {
+    cursor: pointer;
 }
 
 .card:hover {
@@ -234,5 +264,35 @@ const prevSlide = () => {
 .carousel-indicators button.active {
     background: rgba(3, 150, 130, 0.9);
     transform: scale(1.3);
+}
+
+/* Technology Badges */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(32, 58, 67, 0.1);
+}
+
+.tech-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: linear-gradient(135deg, #039682 0%, #027a6a 100%);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    border-radius: 15px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 5px rgba(3, 150, 130, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
+}
+
+.tech-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(3, 150, 130, 0.3);
 }
 </style>

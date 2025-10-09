@@ -8,7 +8,7 @@
         <div 
             v-for="(group, index) in chunkedProjects" 
             :key="index" 
-            class="card-deck my-5 justify-content-center"
+            class="card-deck my-5 justify-content-center d-flex align-items-stretch"
         >
            
             <ProjectCard 
@@ -43,3 +43,14 @@ const chunkedProjects = computed(() => {
   return chunks;
 });
 </script>
+
+<style scoped>
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-deck > * {
+    flex: 1 1 auto;
+}
+</style>

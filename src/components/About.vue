@@ -86,9 +86,8 @@ import CV from '../assets/files/FSA_CV.pdf'
     content: "";
     position: absolute;
     inset: 0;
-    background: url('../assets/images/catcat.png') right/cover no-repeat;
+    background: url('../assets/images/catcat.png') right top/cover no-repeat;
     opacity: 0.25;
-    /* 👈 make the image subtle here */
     z-index: 0;
     pointer-events: none;
 }

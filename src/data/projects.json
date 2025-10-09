@@ -3,6 +3,14 @@
         "id": 1,
         "title": "Fullstack E-commerce App",
         "description": "An e-commerce web app built with Vue.js, featuring secure user authentication, product browsing, cart management, checkout, and order tracking. Includes an interactive admin dashboard with full CRUD operations for managing products and orders. Designed with Bootstrap and Notyf for a responsive, user-friendly experience, and deployed on Render and Vercel.",
+        "technologies": [
+            "Vue.js",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Postman"
+        ],
+        "url": "https://e-commerce-app-nine-ashen.vercel.app",
         "images": [
             "/images/myProjects/ecommerce2.PNG",
             "/images/myProjects/ecommerce.PNG",
@@ -16,6 +24,14 @@
         "id": 2,
         "title": "Fullstack Blog App",
         "description": "A full-stack blogging platform built with the MERN stack, featuring secure authentication, blog creation, editing, and deletion. Includes an admin dashboard for managing blogs and comments. Designed with Bootstrap and Notyf for a clean, responsive interface, and deployed on Render and Vercel for seamless performance.",
+        "technologies": [
+            "React.js",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Postman"
+        ],
+        "url": "https://blog-application-react-two.vercel.app",
         "images": [
             "/images/myProjects/blog1.PNG",
             "/images/myProjects/blog2.PNG",
@@ -29,6 +45,15 @@
         "id": 3,
         "title": "Mobile Movie App",
         "description": "A mobile-focused movie browsing application built with React Native and TypeScript. It features home, search, saved movies, profile, and detailed movie pages. Powered by the TMDB API for real-time movie data and Appwrite for backend services. Styled with Tailwind CSS and NativeWind, optimized exclusively for mobile devices. Android installation link and QR code available on GitHub.",
+        "technologies": [
+            "React Native",
+            "TailwindCSS",
+            "NativeWind",
+            "Expo",
+            "Appwrite",
+            "TMDB API"
+        ],
+        "url": "https://github.com/filsammy/mobile-movie-app?tab=readme-ov-file#movieflix---mobile-movie-app",
         "images": [
             "/images/myProjects/mobile1.png",
             "/images/myProjects/mobile2.png"
@@ -38,6 +63,14 @@
         "id": 4,
         "title": "Fullstack Fitness Tracker App",
         "description": "A simple fitness tracking application that allows users to register, log in, and manage their workout or health records. Features full CRUD functionality for adding, viewing, updating, and deleting personal fitness details, providing an easy way to track progress over time.",
+        "technologies": [
+            "React.js",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Postman"
+        ],
+        "url": "https://fitness-tracker-app-zeta.vercel.app",
         "images": [
             "/images/myProjects/fitness1.PNG",
             "/images/myProjects/fitness2.PNG",
@@ -48,6 +81,14 @@
         "id": 5,
         "title": "Fullstack Course Booking App",
         "description": "A complete course enrollment system built with the MEVN stack and a custom RESTful API. It features user registration, authentication, and profile management, along with secure course creation, updates, archiving, activation, and student enrollment. The backend API is publicly documented using Postman, ensuring transparency and ease of integration.",
+        "technologies": [
+            "Vue.js",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Postman"
+        ],
+        "url": "https://course-booking-app-steel.vercel.app",
         "images": [
             "/images/myProjects/course1.PNG",
             "/images/myProjects/course2.PNG",
@@ -59,6 +100,14 @@
         "id": 6,
         "title": "Fullstack Web Movie App",
         "description": "A dynamic movie platform featuring an admin dashboard with full CRUD functionality for managing movie data. Regular users can browse movies, view details, and engage by adding comments. Designed for an interactive and community-driven movie experience.",
+        "technologies": [
+            "React.js",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Postman"
+        ],
+        "url": "https://web-movie-catalog.vercel.app",
         "images": [
             "/images/myProjects/webmovie1.PNG",
             "/images/myProjects/webmovie2.PNG",
