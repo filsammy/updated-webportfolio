@@ -1,24 +1,194 @@
 <script setup>
+import { ref, computed } from 'vue';
 
-// define the props for this component named "project".
-defineProps({
+const props = defineProps({
     project: Object
 })
+
+// Generate unique carousel ID for each project card
+const carouselId = `carousel-${props.project.id}`;
+
+// Current active image index
+const currentIndex = ref(0);
+
+// Get images array (support both old and new format)
+const images = computed(() => {
+    if (props.project.images && props.project.images.length > 0) {
+        return props.project.images;
+    }
+    return props.project.image ? [props.project.image] : [];
+});
+
+// Check if multiple images exist
+const hasMultipleImages = computed(() => images.value.length > 1);
+
+// Navigate to specific image
+const goToSlide = (index) => {
+    currentIndex.value = index;
+};
+
+// Navigate to next image
+const nextSlide = () => {
+    currentIndex.value = (currentIndex.value + 1) % images.value.length;
+};
+
+// Navigate to previous image
+const prevSlide = () => {
+    currentIndex.value = (currentIndex.value - 1 + images.value.length) % images.value.length;
+};
 </script>
 
-  <template>
+<template>
     <div class="card col-md-3">
-        <!-- use ":" directive to bind the project.image to the src attribute -->
-        <img :src="project.image" class="card-img-top card-img" alt="...">
+        <!-- Custom Carousel -->
+        <div class="image-carousel">
+            <div class="carousel-container">
+                <!-- Images -->
+                <div 
+                    v-for="(image, index) in images" 
+                    :key="index"
+                    class="carousel-slide"
+                    :class="{ active: index === currentIndex }"
+                >
+                    <img :src="image" class="card-img" :alt="`${project.title} - Image ${index + 1}`">
+                </div>
+
+                <!-- Navigation Arrows - only show if multiple images -->
+                <template v-if="hasMultipleImages">
+                    <button class="carousel-btn prev-btn" @click="prevSlide" type="button">
+                        <span>‹</span>
+                    </button>
+                    <button class="carousel-btn next-btn" @click="nextSlide" type="button">
+                        <span>›</span>
+                    </button>
+                </template>
+            </div>
+
+            <!-- Indicators - only show if multiple images -->
+            <div v-if="hasMultipleImages" class="carousel-indicators">
+                <button 
+                    v-for="(image, index) in images" 
+                    :key="index"
+                    @click="goToSlide(index)"
+                    :class="{ active: index === currentIndex }"
+                    type="button"
+                ></button>
+            </div>
+        </div>
+
         <div class="card-body">
-            <!-- use interpolation to bind the project.title to the card title -->
             <h5 class="card-title">{{ project.title }}</h5>
             <p class="card-text">
                 {{ project.description }}
             </p>
-        
         </div>
     </div>
 </template>
 
-<style></style>
+<style scoped>
+.image-carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-slide .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 25px 5px 0px 5px;
+}
+
+/* Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    color: rgb(194, 194, 194);
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: rgb(128, 128, 128);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: rgba(3, 150, 130, 0.9);
+    transform: scale(1.1);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-btn span {
+    line-height: 1;
+    margin-top: -2px;
+}
+
+/* Indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0;
+    position: absolute;
+    left: 35%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    padding: 0;
+}
+
+.carousel-indicators button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+}
+
+.carousel-indicators button.active {
+    background: rgba(3, 150, 130, 0.9);
+    transform: scale(1.3);
+}
+</style>

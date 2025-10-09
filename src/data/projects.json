@@ -1,9 +1,15 @@
 [
-    {  
+    {
         "id": 1,
-        "title": "E-commerce API Documentation",
-        "description": "Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management.\n Documented Backend API published publicly using Postman.",
-        "image": "/images/myProjects/1_project.svg"
+        "title": "Fullstack E-commerce App",
+        "description": "A dynamic MEVN-based e-commerce platform with real-time product search, cart, checkout, and an interactive admin dashboard. Powered by a custom API for seamless order management, live inventory updates, and automated reporting.",
+        "images": [
+            "/images/myProjects/ecommerce2.PNG",
+            "/images/myProjects/ecommerce.PNG",
+            "/images/myProjects/ecommerce3.PNG",
+            "/images/myProjects/ecommerce4.PNG",
+            "/images/myProjects/ecommerce5.PNG"
+        ]
     },
     {
         "id": 2,
@@ -53,5 +59,4 @@
         "description": "Placeholder for your Short courses capstone project.",
         "image": "/images/myProjects/9_project.svg"
     }
-
 ]

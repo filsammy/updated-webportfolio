@@ -34,7 +34,7 @@ import CV from '../assets/files/FSA_CV.pdf'
             class="mx-3"
             id="linkedin"
           >
-            <i class="fab fa-linkedin fa-lg text-white"></i>
+            <i class="fab fa-linkedin fa-lg"></i>
           </a>
 
           <a
@@ -43,7 +43,7 @@ import CV from '../assets/files/FSA_CV.pdf'
             rel="noopener noreferrer"
             id="github"
           >
-            <i class="fab fa-github fa-lg text-white"></i>
+            <i class="fab fa-github fa-lg"></i>
           </a>
         </div>
       </div>
