@@ -62,4 +62,10 @@
 #cntct:hover {
     color: #039682;
 }
+
+.navbar-brand {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+}
 </style>
