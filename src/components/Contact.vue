@@ -120,7 +120,7 @@ onMounted(() => {
   <div class="contact-section">
       <div class="row align-items-center mt-4">
           <div class="col-md-6 map-container">
-              <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=centro%20escolar%20university%20manila&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d976.4773964922247!2d125.0226510929719!3d11.771416711998649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDQ2JzE2LjgiTiAxMjXCsDAxJzIxLjUiRQ!5e0!3m2!1sen!2sph!4v1760096770850!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col-md-6">
               <form @submit.prevent="submitForm">
