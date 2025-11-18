@@ -46,34 +46,22 @@ const handleCardClick = () => {
 </script>
 
 <template>
-    <div class="card col-md-3" @click="handleCardClick" :class="{ 'clickable': project.url }">
+    <div class="card col-md-4" @click="handleCardClick" :class="{ 'clickable': project.url }">
         <!-- Custom Carousel -->
         <div class="image-carousel">
             <div class="carousel-container">
                 <!-- Images -->
-                <div 
-                    v-for="(image, index) in images" 
-                    :key="index"
-                    class="carousel-slide"
-                    :class="{ active: index === currentIndex }"
-                >
+                <div v-for="(image, index) in images" :key="index" class="carousel-slide"
+                    :class="{ active: index === currentIndex }">
                     <img :src="image" class="card-img" :alt="`${project.title} - Image ${index + 1}`">
                 </div>
 
                 <!-- Navigation Arrows - only show if multiple images -->
                 <template v-if="hasMultipleImages">
-                    <button 
-                        class="carousel-btn prev-btn" 
-                        @click.stop="prevSlide" 
-                        type="button"
-                    >
+                    <button class="carousel-btn prev-btn" @click.stop="prevSlide" type="button">
                         <span>‹</span>
                     </button>
-                    <button 
-                        class="carousel-btn next-btn" 
-                        @click.stop="nextSlide" 
-                        type="button"
-                    >
+                    <button class="carousel-btn next-btn" @click.stop="nextSlide" type="button">
                         <span>›</span>
                     </button>
                 </template>
@@ -81,13 +69,8 @@ const handleCardClick = () => {
 
             <!-- Indicators - only show if multiple images -->
             <div v-if="hasMultipleImages" class="carousel-indicators">
-                <button 
-                    v-for="(image, index) in images" 
-                    :key="index"
-                    @click.stop="goToSlide(index)"
-                    :class="{ active: index === currentIndex }"
-                    type="button"
-                ></button>
+                <button v-for="(image, index) in images" :key="index" @click.stop="goToSlide(index)"
+                    :class="{ active: index === currentIndex }" type="button"></button>
             </div>
         </div>
 
@@ -96,14 +79,10 @@ const handleCardClick = () => {
             <p class="card-text">
                 {{ project.description }}
             </p>
-            
+
             <!-- Technology Badges -->
             <div v-if="project.technologies && project.technologies.length > 0" class="tech-badges">
-                <span 
-                    v-for="(tech, index) in project.technologies" 
-                    :key="index"
-                    class="tech-badge"
-                >
+                <span v-for="(tech, index) in project.technologies" :key="index" class="tech-badge">
                     {{ tech }}
                 </span>
             </div>

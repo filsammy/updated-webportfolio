@@ -14,21 +14,25 @@
         <h3 class="my-3 text-center">Front End</h3>
         <div class="row justify-content-center tools-img gx-5">
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+              class="img-fluid" />
             <p class="text-center small mt-1 mb-0">HTML5</p>
-        </div>
+          </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+              class="img-fluid" />
             <p class="text-center small mt-1 mb-0">CSS3</p>
-        </div>
+          </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" class="img-fluid" />
             <p class="text-center small mt-1 mb-0">JavaScript</p>
-        </div>
+          </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap" class="img-fluid" />
             <p class="text-center small mt-1 mb-0">Bootstrap</p>
-        </div>
+          </div>
         </div>
       </div>
 
@@ -37,19 +41,23 @@
         <h3 class="my-3 text-center">MERN</h3>
         <div class="row tools-img gx-5">
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+              class="img-fluid" />
             <p class="text-center small mt-1 mb-0">MongoDB</p>
-        </div>
+          </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" class="img-fluid bg-light rounded p-1" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js"
+              class="img-fluid bg-light rounded p-1" />
             <p class="text-center small mt-1 mb-0">Express.js</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+              class="img-fluid" />
             <p class="text-center small mt-1 mb-0">React.js</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+              class="img-fluid" />
             <p class="text-center small mt-1 mb-0">Node.js</p>
           </div>
         </div>
@@ -60,35 +68,21 @@
         <h3 class="my-3 text-center">Mobile Dev</h3>
         <div class="row tools-img gx-5">
           <div class="col-6 tools-img text-center">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt="React Native"
-              class="img-fluid p-1 bg-white rounded"
-            />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native"
+              class="img-fluid p-1 bg-white rounded" />
             <p class="text-center small mt-1 mb-0">React Native</p>
           </div>
           <div class="col-6 tools-img text-center">
-            <img
-              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/expo.svg"
-              alt="Expo"
-              class="img-fluid p-1"
-            />
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/expo.svg" alt="Expo" class="img-fluid p-1" />
             <p class="text-center small mt-1 mb-0">Expo</p>
           </div>
           <div class="col-6 tools-img text-center">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-              alt="TypeScript"
-              class="img-fluid"
-            />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              alt="TypeScript" class="img-fluid" />
             <p class="text-center small mt-1 mb-0">TypeScript</p>
           </div>
           <div class="col-6 tools-img text-center">
-            <img
-              src="https://img.icons8.com/color/96/tailwindcss.png"
-              alt="NativeWind"
-              class="img-fluid"
-            />
+            <img src="https://img.icons8.com/color/96/tailwindcss.png" alt="NativeWind" class="img-fluid" />
             <p class="text-center small mt-1 mb-0">NativeWind</p>
           </div>
         </div>
@@ -103,19 +97,23 @@
         <h3 class="my-3 text-center">Deployment</h3>
         <div class="row tools-img gx-5">
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vercel.svg" alt="Vercel" class="img-fluid p-2" />
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vercel.svg" alt="Vercel"
+              class="img-fluid p-2" />
             <p class="text-center small mt-1 mb-0">Vercel</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/render.svg" alt="Render" class="img-fluid p-2" />
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/render.svg" alt="Render"
+              class="img-fluid p-2" />
             <p class="text-center small mt-1 mb-0">Render</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
+              class="img-fluid" />
             <p class="text-center small mt-1 mb-0">Docker</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+              class="img-fluid" />
             <p class="text-center small mt-1 mb-0">Git</p>
           </div>
         </div>
@@ -126,20 +124,24 @@
         <h3 class="my-3 text-center">Other Tools</h3>
         <div class="row tools-img gx-5">
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="img-fluid" />
-            <p class="text-center small mt-1 mb-0">VS Code</p>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"
+              class="img-fluid" />
+            <p class="text-center small mt-1 mb-0">Next.js</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"
+              class="img-fluid" />
             <p class="text-center small mt-1 mb-0">Postman</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" class="img-fluid" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello"
+              class="img-fluid" />
             <p class="text-center small mt-1 mb-0">Trello</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="img-fluid" />
-<p class="text-center small mt-1 mb-0">Vue.js</p>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js"
+              class="img-fluid" />
+            <p class="text-center small mt-1 mb-0">Vue.js</p>
           </div>
         </div>
       </div>

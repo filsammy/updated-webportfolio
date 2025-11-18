@@ -1,5 +1,28 @@
 [
     {
+        "id": 0,
+        "title": "Fullstack Web Dating App (Light/Dark theme)",
+        "description": "A fullstack dating web application built with Next.js, offering secure user authentication, detailed profile creation, and a dynamic matching system. Users can filter potential matches by age and distance, manage connections with block/unblock functionality, and exchange messages once a mutual match is achieved. The app includes a mobile-responsive UI, a smooth light/dark theme experience, and is deployed across Vercel and Render for optimized performance.",
+        "technologies": [
+            "Next.js",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "TypeScript",
+            "TailwindCSS",
+            "Shadcn"
+        ],
+        "url": "https://dating-app-phi-five.vercel.app/",
+        "images": [
+            "/images/myProjects/dating1.PNG",
+            "/images/myProjects/dating2.PNG",
+            "/images/myProjects/dating3.PNG",
+            "/images/myProjects/dating4.PNG",
+            "/images/myProjects/dating5.PNG",
+            "/images/myProjects/dating6.PNG"
+        ]
+    },
+    {
         "id": 1,
         "title": "Fullstack E-commerce App",
         "description": "An e-commerce web app built with Vue.js, featuring secure user authentication, product browsing, cart management, checkout, and order tracking. Includes an interactive admin dashboard with full CRUD operations for managing products and orders. Designed with Bootstrap and Notyf for a responsive, user-friendly experience, and deployed on Render and Vercel.",
@@ -61,24 +84,6 @@
     },
     {
         "id": 4,
-        "title": "Fullstack Fitness Tracker App",
-        "description": "A simple fitness tracking application that allows users to register, log in, and manage their workout or health records. Features full CRUD functionality for adding, viewing, updating, and deleting personal fitness details, providing an easy way to track progress over time.",
-        "technologies": [
-            "React.js",
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "Postman"
-        ],
-        "url": "https://fitness-tracker-app-zeta.vercel.app",
-        "images": [
-            "/images/myProjects/fitness1.PNG",
-            "/images/myProjects/fitness2.PNG",
-            "/images/myProjects/fitness3.PNG"
-        ]
-    },
-    {
-        "id": 5,
         "title": "Fullstack Course Booking App",
         "description": "A complete course enrollment system built with the MEVN stack and a custom RESTful API. It features user registration, authentication, and profile management, along with secure course creation, updates, archiving, activation, and student enrollment. The backend API is publicly documented using Postman, ensuring transparency and ease of integration.",
         "technologies": [
@@ -94,24 +99,6 @@
             "/images/myProjects/course2.PNG",
             "/images/myProjects/course3.PNG",
             "/images/myProjects/course4.PNG"
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Fullstack Web Movie App",
-        "description": "A dynamic movie platform featuring an admin dashboard with full CRUD functionality for managing movie data. Regular users can browse movies, view details, and engage by adding comments. Designed for an interactive and community-driven movie experience.",
-        "technologies": [
-            "React.js",
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "Postman"
-        ],
-        "url": "https://web-movie-catalog.vercel.app",
-        "images": [
-            "/images/myProjects/webmovie1.PNG",
-            "/images/myProjects/webmovie2.PNG",
-            "/images/myProjects/webmovie3.PNG"
         ]
     }
 ]
