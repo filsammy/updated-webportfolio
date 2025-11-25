@@ -107,11 +107,6 @@
             <p class="text-center small mt-1 mb-0">Render</p>
           </div>
           <div class="col-6 tools-img">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
-              class="img-fluid" />
-            <p class="text-center small mt-1 mb-0">Docker</p>
-          </div>
-          <div class="col-6 tools-img">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
               class="img-fluid" />
             <p class="text-center small mt-1 mb-0">Git</p>
