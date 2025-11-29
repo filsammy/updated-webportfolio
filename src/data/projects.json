@@ -24,7 +24,7 @@
     },
     {
         "id": 1,
-        "title": "LiftRight — Frontend MVP (Gym Web App Prototype)",
+        "title": "Frontend MVP (Gym Web App Prototype with Light/Dark)",
         "description": "LiftRight is a polished, frontend-only MVP designed to demonstrate the full user experience of a modern gym web application. Built with React, TypeScript, Tailwind, and Zustand, it features a fully navigable multi-page interface including a hero-driven landing page, programs/services page, trainer showcase, membership pricing tiers, and a contact page. Smooth micro-interactions, scroll animations, and a clean visual identity give the client a near-production preview of the final product. All data is mock-based, with reusable UI components for future backend integration.",
         "technologies": [
             "React",
