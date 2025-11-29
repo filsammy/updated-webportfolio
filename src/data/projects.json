@@ -24,6 +24,27 @@
     },
     {
         "id": 1,
+        "title": "LiftRight — Frontend MVP (Gym Web App Prototype)",
+        "description": "LiftRight is a polished, frontend-only MVP designed to demonstrate the full user experience of a modern gym web application. Built with React, TypeScript, Tailwind, and Zustand, it features a fully navigable multi-page interface including a hero-driven landing page, programs/services page, trainer showcase, membership pricing tiers, and a contact page. Smooth micro-interactions, scroll animations, and a clean visual identity give the client a near-production preview of the final product. All data is mock-based, with reusable UI components for future backend integration.",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "TailwindCSS",
+            "Zustand",
+            "React Router",
+            "Framer Motion"
+        ],
+        "url": "https://lift-right-web-app.vercel.app/",
+        "images": [
+            "/images/myProjects/gym1.PNG",
+            "/images/myProjects/gym5.PNG",
+            "/images/myProjects/gym2.PNG",
+            "/images/myProjects/gym3.PNG",
+            "/images/myProjects/gym4.PNG"
+        ]
+    },
+    {
+        "id": 2,
         "title": "Fullstack E-commerce App",
         "description": "An e-commerce web app built with Vue.js, featuring secure user authentication, product browsing, cart management, checkout, and order tracking. Includes an interactive admin dashboard with full CRUD operations for managing products and orders. Designed with Bootstrap and Notyf for a responsive, user-friendly experience, and deployed on Render and Vercel.",
         "technologies": [
@@ -44,7 +65,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Fullstack Blog App",
         "description": "A full-stack blogging platform built with the MERN stack, featuring secure authentication, blog creation, editing, and deletion. Includes an admin dashboard for managing blogs and comments. Designed with Bootstrap and Notyf for a clean, responsive interface, and deployed on Render and Vercel for seamless performance.",
         "technologies": [
@@ -65,7 +86,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Mobile Movie App",
         "description": "A mobile-focused movie browsing application built with React Native and TypeScript. It features home, search, saved movies, profile, and detailed movie pages. Powered by the TMDB API for real-time movie data and Appwrite for backend services. Styled with Tailwind CSS and NativeWind, optimized exclusively for mobile devices. Android installation link and QR code available on GitHub.",
         "technologies": [
@@ -83,7 +104,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Fullstack Course Booking App",
         "description": "A complete course enrollment system built with the MEVN stack and a custom RESTful API. It features user registration, authentication, and profile management, along with secure course creation, updates, archiving, activation, and student enrollment. The backend API is publicly documented using Postman, ensuring transparency and ease of integration.",
         "technologies": [
