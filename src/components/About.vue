@@ -1,5 +1,5 @@
 <script setup>
-import CV from '../assets/files/FSA_CV.pdf'
+import CV from '../assets/files/FSA_CV_2.pdf'
 </script>
 
 <template>
