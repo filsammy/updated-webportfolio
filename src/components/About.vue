@@ -13,7 +13,7 @@ import CV from '../assets/files/FSA_CV_2.pdf'
     <div class="col-11 col-md-7 col-lg-5 text-white px-3 px-md-5 py-lg-5">
       <h2 class="text-center text-md-left" id="myGreeting">Hey there! I'm</h2>
       <h1 class="mt-2 text-center text-md-left" id="myName">Fil Sammy</h1>
-      <h2 class="mt-2 text-center text-md-left" id="myTitle">// Junior Web Developer</h2>
+      <h2 class="mt-2 text-center text-md-left" id="myTitle">// Web Developer</h2>
 
       <p class="text-justify text-center text-md-left landing-text">
         With a passion for building scalable, user-focused applications. Guided by curiosity and a vast option of AI and

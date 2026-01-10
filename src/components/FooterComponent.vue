@@ -4,7 +4,7 @@
 <template>
   <footer class="mt-5 p-3 text-light">
       <h6 class="text-center">Fil Sammy</h6>
-      <p class="text-center mb-1">Full Stack Web Developer</p>
+      <p class="text-center mb-1">Web Developer</p>
       <p class="text-center mb-0">&copy; All Rights Reserved 2025</p>
   </footer>
 </template>

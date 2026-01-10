@@ -6,7 +6,7 @@
         "technologies": [
             "Next.js",
             "Node.js",
-            "Express",
+            "Express.js",
             "MongoDB",
             "TypeScript",
             "TailwindCSS",
@@ -23,16 +23,14 @@
         ]
     },
     {
-        "id": 1,
-        "title": "Frontend MVP (Gym Web App Prototype with Light/Dark)",
-        "description": "LiftRight is a polished, frontend-only MVP designed to demonstrate the full user experience of a modern gym web application. Built with React, TypeScript, Tailwind, and Zustand, it features a fully navigable multi-page interface including a hero-driven landing page, programs/services page, trainer showcase, membership pricing tiers, and a contact page. Smooth micro-interactions, scroll animations, and a clean visual identity give the client a near-production preview of the final product. All data is mock-based, with reusable UI components for future backend integration.",
+        "id": 8,
+        "title": "Lift Right",
+        "description": "A proposed frotend website design for a Gym business owner",
         "technologies": [
             "React",
             "TypeScript",
             "TailwindCSS",
-            "Zustand",
-            "React Router",
-            "Framer Motion"
+            "React Router"
         ],
         "url": "https://lift-right-web-app.vercel.app/",
         "images": [
@@ -49,8 +47,9 @@
         "description": "An e-commerce web app built with Vue.js, featuring secure user authentication, product browsing, cart management, checkout, and order tracking. Includes an interactive admin dashboard with full CRUD operations for managing products and orders. Designed with Bootstrap and Notyf for a responsive, user-friendly experience, and deployed on Render and Vercel.",
         "technologies": [
             "Vue.js",
+            "Bootstrap",
             "Node.js",
-            "Express",
+            "Express.js",
             "MongoDB",
             "Postman"
         ],
@@ -70,8 +69,9 @@
         "description": "A full-stack blogging platform built with the MERN stack, featuring secure authentication, blog creation, editing, and deletion. Includes an admin dashboard for managing blogs and comments. Designed with Bootstrap and Notyf for a clean, responsive interface, and deployed on Render and Vercel for seamless performance.",
         "technologies": [
             "React.js",
+            "Bootstrap",
             "Node.js",
-            "Express",
+            "Express.js",
             "MongoDB",
             "Postman"
         ],
@@ -109,8 +109,9 @@
         "description": "A complete course enrollment system built with the MEVN stack and a custom RESTful API. It features user registration, authentication, and profile management, along with secure course creation, updates, archiving, activation, and student enrollment. The backend API is publicly documented using Postman, ensuring transparency and ease of integration.",
         "technologies": [
             "Vue.js",
+            "Bootstrap",
             "Node.js",
-            "Express",
+            "Express.js",
             "MongoDB",
             "Postman"
         ],
@@ -120,6 +121,74 @@
             "/images/myProjects/course2.PNG",
             "/images/myProjects/course3.PNG",
             "/images/myProjects/course4.PNG"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "The Strand V1",
+        "description": "A website translated from the designer's layout for one of Sandy Beach Hospitality’s resorts in Boracay.",
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "TailwindCSS"
+        ],
+        "url": "https://strandboracay.coffeecoding.co/",
+        "images": [
+            "/images/myProjects/strandv1.PNG",
+            "/images/myProjects/strandv1-2.PNG",
+            "/images/myProjects/strandv1-3.PNG"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "The Strand V2",
+        "description": "A project proposal for one of Sandy Beach Hospitality's Resort in Boracay",
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "TailwindCSS"
+        ],
+        "url": "https://the-strand-v2.vercel.app",
+        "images": [
+            "/images/myProjects/strandv2.PNG",
+            "/images/myProjects/strandv2-2.PNG",
+            "/images/myProjects/strandv2-3.PNG",
+            "/images/myProjects/strandv2-4.PNG",
+            "/images/myProjects/strandv2-5.PNG",
+            "/images/myProjects/strandv2-6.PNG"
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Sandy Beach Hospitality",
+        "description": "A replicated website from their original website that we proposed to add an AI chatbot",
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "TailwindCSS"
+        ],
+        "url": "https://sandybeach.coffeecoding.co/",
+        "images": [
+            "/images/myProjects/sandybeach1.PNG",
+            "/images/myProjects/sandybeach2.PNG",
+            "/images/myProjects/sandybeach3.PNG",
+            "/images/myProjects/sandybeach4.PNG",
+            "/images/myProjects/sandybeach5.PNG"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "China Young Talent Association",
+        "description": "A proposed replicated website for a Chinese ESL website",
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "TailwindCSS"
+        ],
+        "url": "https://school-pink-xi.vercel.app/",
+        "images": [
+            "/images/myProjects/CYTA.PNG",
+            "/images/myProjects/CYTA2.PNG"
         ]
     }
 ]
