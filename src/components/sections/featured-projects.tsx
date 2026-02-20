@@ -82,7 +82,7 @@ export function FeaturedProjects() {
                                 <div className={`w-full lg:w-[40%] text-left space-y-4 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
                                     <div className="space-y-2">
                                         <span className="text-primary font-mono text-sm tracking-wider">
-                                            {project.category}
+                                            {project.category?.join(" · ")}
                                         </span>
                                         <h3 className="text-3xl font-bold tracking-tight text-foreground">
                                             {project.title}

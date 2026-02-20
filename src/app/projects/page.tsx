@@ -29,13 +29,13 @@ export default function ProjectsPage() {
     const [frameworkFilter, setFrameworkFilter] = React.useState<string | null>(null);
 
     // Define filter options
-    const categories = ["Full-Stack", "Frontend", "Backend", "Client Work", "In Development"];
+    const categories = ["Full-Stack", "Frontend", "Client Work", "In Development"];
     const frameworks = ["Next.js", "React", "Vue.js", "Node.js"];
 
     // Filter projects based on both category and framework
     const filteredProjects = React.useMemo(() => {
         return projects.filter((project) => {
-            const matchesCategory = !categoryFilter || project.category === categoryFilter;
+            const matchesCategory = !categoryFilter || (project.category?.includes(categoryFilter as "Full-Stack" | "Frontend" | "Backend" | "Client Work" | "In Development") ?? false);
             const matchesFramework = !frameworkFilter || project.tags.some(tag => tag.includes(frameworkFilter));
             return matchesCategory && matchesFramework;
         });
