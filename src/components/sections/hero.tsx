@@ -82,7 +82,7 @@ export function Hero() {
             className="absolute top-[15%] md:top-[20%] right-4 md:-right-8 max-w-xs text-right z-30 hidden md:block"
           >
             <p className="text-sm md:text-base leading-relaxed bg-background/80 backdrop-blur-md p-4 border border-border/50 rounded-lg shadow-sm">
-              Designing thoughtful digital experiences and workflows, using AI as a tool to build faster, smarter, and more effectively.
+              Detail-oriented Frontend Developer with full-stack experience and 4+ years in retail leadership. Passionate about building scalable, accessible, user-focused web applications that connect technical solutions with real business impact.
             </p>
 
 

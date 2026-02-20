@@ -52,12 +52,9 @@ export function Navbar() {
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center gap-8">
-                    <a
-                        href="/#about"
-                        className="text-sm font-bold text-muted-foreground hover:text-foreground dark:text-foreground transition-colors"
-                    >
+                    <Link href="/#about" className="text-sm font-bold text-muted-foreground hover:text-foreground dark:text-foreground transition-colors" >
                         About
-                    </a>
+                    </Link>
 
                     <DropdownMenu>
                         <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-bold text-muted-foreground hover:text-foreground dark:text-foreground transition-colors outline-none focus:text-foreground">
@@ -132,13 +129,13 @@ export function Navbar() {
                                 </div>
                                 <nav className="flex-1 p-6">
                                     <div className="flex flex-col gap-4">
-                                        <a
+                                        <Link
                                             href="/#about"
                                             onClick={() => setIsOpen(false)}
                                             className="text-lg font-bold text-foreground hover:text-primary transition-colors py-2"
                                         >
                                             About
-                                        </a>
+                                        </Link>
                                         <Link
                                             href="/projects"
                                             onClick={() => setIsOpen(false)}

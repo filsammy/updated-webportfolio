@@ -87,6 +87,7 @@ export const projects: Project[] = [
         live: "https://lift-right-web-app.vercel.app/",
         featured: false,
     },
+    // Fixed the links here (feb. 18, 2026)
     {
         id: "7",
         title: "The Strand V1",
@@ -94,7 +95,8 @@ export const projects: Project[] = [
         image: "",
         tags: ["Next.js", "TypeScript", "TailwindCSS"],
         category: "Client Work",
-        live: "https://strandboracay.coffeecoding.co/",
+        github: "https://github.com/filsammy/the-strand-boracay",
+        live: "https://the-strand-boracay.vercel.app/",
         featured: false,
     },
     {
@@ -108,6 +110,7 @@ export const projects: Project[] = [
         live: "https://the-strand-v2.vercel.app/",
         featured: true,
     },
+    // Fixed the links here also (feb. 18, 2026)
     {
         id: "1",
         title: "Sandy Beach Hospitality",
@@ -115,7 +118,8 @@ export const projects: Project[] = [
         image: "",
         tags: ["Next.js", "TypeScript", "TailwindCSS"],
         category: "Client Work",
-        live: "https://sandybeach.coffeecoding.co/",
+        github: "https://github.com/filsammy/sandy-beach-hospitality",
+        live: "https://sandy-beach-hospitality.vercel.app/",
         featured: false,
     },
     {
