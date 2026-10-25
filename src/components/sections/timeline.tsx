@@ -17,11 +17,11 @@ const experienceItems = [
   },
   {
     id: "familyOwnedBusiness",
-    role: "Operations Manager",
-    company: "MariClaire Water Station and Retail Services",
+    role: "Operations Supervisor",
+    company: "MariClaire Group of Business",
     date: "2020-2024",
     description:
-      "Managed daily operations of a family-owned retail and water station business during the pandemic. Identified operational bottlenecks, introduced process improvements, and contributed to significant sales growth and business expansion. These hands-on operational challenges sparked my transition into software development, where I began designing systems to digitize and streamline real-world workflows.",
+      "Ran daily operations across a water refilling station, meat shop and convenience store. Scaled water station production by up to 300% through workflow improvements and supported the launch of an additional branch. Seeing manual processes slow the business down is what led me into software development.",
   },
   {
     id: "zuittCodingBootcamp",
@@ -29,15 +29,23 @@ const experienceItems = [
     company: "Zuitt Coding Bootcamp",
     date: "2025",
     description:
-      "Completed a rigorous 4-month coding bootcamp, mastering full-stack development with MERN technologies. Built multiple projects—including a full-stack e-commerce platform and a course booking system —focused on solving real business and operational problems.",
+      "Completed an intensive full-stack program (MERN), building an e-commerce platform and a course booking system focused on real business problems.",
   },
   {
     id: "freelance",
-    role: "Freelance Frontend Developer",
-    company: "Self-Employed",
-    date: "2025-Present",
+    role: "Freelance Front-End Developer",
+    company: "Independent",
+    date: "Nov 2025-Mar 2026",
     description:
-      "Building responsive, user-friendly web applications for clients using modern frontend technologies. Applying a business-first and operations-aware approach to frontend development while continuously improving through real-world projects, best practices, ethical AI use, and additional certifications.",
+      "Built and launched websites for AMEN Pest Control and HVAC Rescue LLC, including DNS, SSL and Meta Pixel setup, plus client communication and delivery. Also built responsive landing pages from client mockups.",
+  },
+  {
+    id: "corporate",
+    role: "Front-End Developer",
+    company: "WPP Production (Apple, Korea)",
+    date: "Apr 2026-Present",
+    description:
+      "Localizing Apple web pages to global design standards with WCAG 2.1 AA accessibility, responsiveness and cross-browser quality. Collaborating with teams across Manila and Korea, and mentoring new hires.",
   },
 ];
 
@@ -87,4 +95,3 @@ export function Timeline() {
     </section>
   );
 }
-

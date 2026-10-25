@@ -17,26 +17,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fil Sammy Abawag | Web Developer Portfolio",
+  metadataBase: new URL("https://webportfolio-1-psi.vercel.app"),
+  title: {
+    default: "Fil Sammy Abawag | Front-End & Full-Stack Developer",
+    template: "%s | Fil Sammy Abawag",
+  },
   description:
-    "A web developer passionate about creating elegant, performant, and accessible digital experiences using modern technologies.",
+    "Front-end and full-stack developer based in Makati, Philippines. I build responsive, accessible websites and web apps with React, Next.js, TypeScript and Tailwind CSS.",
   keywords: [
-    "web developer",
+    "Fil Sammy Abawag",
+    "front-end developer",
+    "full-stack developer",
+    "web developer Philippines",
+    "React developer",
+    "Next.js developer",
+    "TypeScript",
+    "Tailwind CSS",
+    "responsive web design",
+    "web accessibility",
     "portfolio",
-    "react",
-    "next.js",
-    "typescript",
-    "full stack",
-    "shopify theme",
-    "shopify liquid",
   ],
   authors: [{ name: "Fil Sammy Abawag" }],
   openGraph: {
     type: "website",
-    title: "Fil Sammy Abawag | Web Developer Portfolio",
+    url: "/",
+    title: "Fil Sammy Abawag | Front-End & Full-Stack Developer",
     description:
-      "A web developer passionate about creating elegant, performant, and accessible digital experiences.",
-    siteName: "Fil Sammy Web Portfolio",
+      "Responsive, accessible websites and web apps built with React, Next.js, TypeScript and Tailwind CSS.",
+    siteName: "Fil Sammy Abawag Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fil Sammy Abawag | Front-End & Full-Stack Developer",
+    description:
+      "Responsive, accessible websites and web apps built with React, Next.js, TypeScript and Tailwind CSS.",
   },
 };
 
@@ -52,7 +66,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
